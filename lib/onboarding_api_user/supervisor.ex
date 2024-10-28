@@ -10,8 +10,8 @@ defmodule OnboardingApiUser.Supervisor do
   def init(:ok) do
     children = []
 
-    require IEx
-    IEx.pry()
+    #require IEx
+    #IEx.pry()
 
     Supervisor.init(children, strategy: :one_for_one)
   end
