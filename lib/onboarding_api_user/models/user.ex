@@ -7,8 +7,8 @@ defmodule OnboardingApiUser.Models.User do
   defstruct [:username, :name, :age]
 
   @type t :: %__MODULE__{
-    username:  String.t(),
-    name: String.t(),
-    age: non_neg_integer()
-  }
+          username: String.t(),
+          name: String.t(),
+          age: non_neg_integer()
+        }
 end
