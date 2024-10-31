@@ -8,10 +8,9 @@ defmodule OnboardingApiUser.Supervisor do
   end
 
   def init(:ok) do
-    children = []
-
-    require IEx
-    IEx.pry()
+    children = [
+      {OnboardingApiUser.UserStorage, []}
+    ]
 
     Supervisor.init(children, strategy: :one_for_one)
   end
